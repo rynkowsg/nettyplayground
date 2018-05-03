@@ -1,6 +1,7 @@
 ext {
     versions = [
             jvm               : '1.8',
+            kotlin            : '1.2.40',
             guava             : '23.0',
             commonsMath       : '3.6.1',
             junit             : '4.12',
@@ -9,6 +10,8 @@ ext {
     deps = [
             guava              : "com.google.guava:guava:${versions.guava}",
             commonsMath        : "org.apache.commons:commons-math3:${versions.commonsMath}",
+            kotlin             : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${versions.kotlin}",
+            kotlinGradlePlugin : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
             junit              : "junit:junit:${versions.junit}",
     ]
 }

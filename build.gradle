@@ -1,5 +1,12 @@
 buildscript {
     apply from: rootProject.file('dependencies.gradle')
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath deps.kotlinGradlePlugin
+    }
 }
 
 
@@ -11,6 +18,10 @@ subprojects {
     apply plugin: 'java'
     sourceCompatibility = versions.jvm
     targetCompatibility = versions.jvm
+
+    apply plugin: 'kotlin'
+    compileKotlin.kotlinOptions.jvmTarget = versions.jvm
+    compileTestKotlin.kotlinOptions.jvmTarget = versions.jvm
 }
 
 
