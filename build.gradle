@@ -2,10 +2,15 @@ buildscript {
     apply from: rootProject.file('dependencies.gradle')
 }
 
-allprojects {
+
+subprojects {
     repositories {
         mavenCentral()
     }
+
+    apply plugin: 'java'
+    sourceCompatibility = versions.jvm
+    targetCompatibility = versions.jvm
 }
 
 

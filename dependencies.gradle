@@ -1,5 +1,6 @@
 ext {
     versions = [
+            jvm               : '1.8',
             guava             : '23.0',
             commonsMath       : '3.6.1',
             junit             : '4.12',
