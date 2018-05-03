@@ -1,0 +1,13 @@
+ext {
+    versions = [
+            guava             : '23.0',
+            commonsMath       : '3.6.1',
+            junit             : '4.12',
+    ]
+
+    deps = [
+            guava              : "com.google.guava:guava:${versions.guava}",
+            commonsMath        : "org.apache.commons:commons-math3:${versions.commonsMath}",
+            junit              : "junit:junit:${versions.junit}",
+    ]
+}

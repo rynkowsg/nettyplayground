@@ -15,7 +15,7 @@ dependencies {
     //        compile - dependency found on compile classpath of this component and consumers
     // implementation - dependency used internally, and not exposed to consumers on their own compile classpath
 
-    api 'org.apache.commons:commons-math3:3.6.1'
-    implementation 'com.google.guava:guava:23.0'
-    testImplementation 'junit:junit:4.12'
+    api deps.commonsMath
+    implementation deps.guava
+    testImplementation deps.junit
 }

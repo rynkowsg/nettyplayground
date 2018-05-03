@@ -21,6 +21,6 @@ dependencies {
 
     compile project(':lib')
 
-    compile 'com.google.guava:guava:23.0'
-    testCompile 'junit:junit:4.12'
+    compile deps.guava
+    testCompile deps.junit
 }
