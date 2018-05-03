@@ -1,9 +1,16 @@
 ext {
     versions = [
             jvm               : '1.8',
+            rxjava            : '2.1.12',
+            rxrelay           : '2.0.0',
+            dagger            : '2.15',
+            okhttp            : '3.10.0',
+            retrofit          : '2.4.0',
             kotlin            : '1.2.40',
             guava             : '23.0',
             commonsMath       : '3.6.1',
+            netty             : '4.1.24.Final',
+            rxnetty           : '0.5.1',
             junit             : '4.12',
     ]
 
@@ -12,6 +19,8 @@ ext {
             commonsMath        : "org.apache.commons:commons-math3:${versions.commonsMath}",
             kotlin             : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${versions.kotlin}",
             kotlinGradlePlugin : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
+            netty              : "io.netty:netty-all:${versions.netty}",
+            rxnetty            : "io.reactivex:rxnetty:${versions.rxnetty}",
             junit              : "junit:junit:${versions.junit}",
     ]
 }
